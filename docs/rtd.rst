@@ -2,36 +2,42 @@
 
 Creation de la documentation avec Readthedocs
 =============================================
-Créer un compte sur Github et sur Readthedocs.
-----------------------------------------------
-Installer les dépendances :
----------------------------
+
+**Créer un compte sur Github et sur Readthedocs.**
+
+------------------------------
+
+**Installer les dépendances :**
 ::
 
     [.] sudo apt install python 3.9 python-is-python3 pip3 git
     [.] sudo pip3 install sphinx
 
-Créer un dossier pour Readthedocs :
------------------------------------
+------------------------------
+
+**Créer un dossier pour Readthedocs :**
 ::
 
     [.] mkdir readthedocs
 
-Créer un fichier .gitignore :
------------------------------
+------------------------------
+
+**Créer un fichier .gitignore :**
 ::
 
     [.] cd readthedocs
     [./readthedocs] echo "_*" > .gitignore
 
-Créer le dossier pour la doc :
 ------------------------------
+
+**Créer le dossier pour la doc :**
 ::
 
     [./readthedocs] mkdir docs
 
-Executer Sphinx pour créer le template de la doc :
---------------------------------------------------
+------------------------------
+
+**Executer Sphinx pour créer le template de la doc :**
 ::
 
     [./readthedocs] cd docs
@@ -45,19 +51,21 @@ Executer Sphinx pour créer le template de la doc :
     > version du projet []:
     > Langue du projet [en]: fr
 
-Modifier le fichier conf.py pour changer le template :
-------------------------------------------------------
+------------------------------
+
+**Modifier le fichier conf.py pour changer le template :**
 rajouter : import sphinx_rtd_theme
 
 modifier : html_theme = 'alabaster'
 par : html_theme = 'sphinx_rtd_theme'
 
+------------------------------
 
-Créer un dépot <test> dans gitlab
----------------------------------
+**Créer un dépot <test> dans gitlab**
 
-Transférer dans le dépot :
---------------------------
+------------------------------
+
+**Transférer dans le dépot :**
 ::
 
     [./readthedocs] git init
@@ -69,7 +77,17 @@ Transférer dans le dépot :
     [./readthedocs] git remote add origin https://github.com/<ROBERTPASCAL/test.git>
     [./readthedocs] git push -u origin main
 
+------------------------------
 
-.. toctree::
-   :maxdepth: 2
-   :caption: test
+**Importer un projet dans Readthedocs**
+ * Choisir un nom de projet disponible dans Readthedocs
+ * Cocher "Modifier les options avancées du projet"
+ * Cliquer sur "Suivant"
+ * Selectionner la langue "France"
+ * Cliquez sur "Terminer"
+ * Une fois le projet créer cliquez sur l'onglet "Admin"
+ * Cliquer sur le menu "Paramètres avancés"
+ * Selectionnez la "Branche par défaut" de votre projet
+ * Cochez "Build pull requests for this project"
+ * Cliquez sur "Enregistrer"
+ * Cliquez sur "Compiler une version"
