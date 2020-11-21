@@ -1,28 +1,3 @@
-***************
-Titre pour voir
-***************
-
-test de chapitre
-################
-
-test de partie
-**************
-
-test de section
-===============
-
-test de subsection
-------------------
-
-tes de subsub section
-^^^^^^^^^^^^^^^^^^^^^
-
-test de paragraphe
-""""""""""""""""""
-
-fsdfsdfsdf il es timportant de tester
-
-
 Creation de la documentation avec Readthedocs
 =============================================
 Requirement
@@ -30,20 +5,20 @@ Requirement
 Créer un compte sur Github et sur Readthedocs.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Installer les dépendances :
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""
 ::
 
     [.] sudo apt install python 3.9 python-is-python3 pip3 git
     [.] sudo pip3 install sphinx
 
 Créer un dossier pour Readthedocs :
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""""""
 ::
 
     [.] mkdir readthedoc
 
 Initialiser Git sur ce dossier :
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""
 ::
 
     [.] cd readthedocd
@@ -51,8 +26,26 @@ Initialiser Git sur ce dossier :
     [./readthedocs] git config --global user.name "{John Doe}"
     [./readthedocs] git config --global user.email {johndoe@example.com}
 
-.. role:: red 
-    This text is :red:`colored red` and so is :red:`this`
+Créer le dossier pour la doc :
+""""""""""""""""""""""""""""""
+::
+
+    [./readthedocs] mkdir docs
+    
+Executer Sphinx pour créer le template de la doc :
+""""""""""""""""""""""""""""""""""""""""""""""""""
+::
+
+    [./readthedocs] cd docs
+    [./readthedocs/docs] sphinx-quickconfig
+::
+
+    > Séparer les répertoires build et source (y/n) [n]: 
+    > Nom du projet: <projet papa>
+    > Nom(s) de l'auteur: <John Doe>
+    > version du projet []: 
+    > Langue du projet [en]: fr
+
 
 .. toctree::
    :maxdepth: 2
