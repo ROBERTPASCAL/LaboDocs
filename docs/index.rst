@@ -26,7 +26,7 @@ Initialiser Git sur ce dossier :
 """"""""""""""""""""""""""""""""
 ::
 
-    [.] cd readthedocd
+    [.] cd readthedocs
     [./readthedocs] git init
     [./readthedocs] git config --global user.name "{John Doe}"
     [./readthedocs] git config --global user.email {johndoe@example.com}
