@@ -65,6 +65,13 @@ rajouter : import sphinx_rtd_theme
 modifier : html_theme = 'alabaster'
 par : html_theme = 'sphinx_rtd_theme'
 
+faire un commit des fichiers :
+""""""""""""""""""""""""""""""
+::
+
+    git add .gitignore
+    git add *
+    git commit -m "Creation"
 
 
 .. toctree::
