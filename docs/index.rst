@@ -1,4 +1,4 @@
-Creation de la documentation avec Resdthedocs
+Creation de la documentation avec Readthedocs
 =============================================
 Requirement
 -----------
