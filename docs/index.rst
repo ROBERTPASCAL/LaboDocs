@@ -5,38 +5,36 @@
 
 Creation de la documentation avec Readthedocs
 =============================================
-Requirement
------------
 Créer un compte sur Github et sur Readthedocs.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------
 Installer les dépendances :
-"""""""""""""""""""""""""""
+---------------------------
 ::
 
     [.] sudo apt install python 3.9 python-is-python3 pip3 git
     [.] sudo pip3 install sphinx
 
 Créer un dossier pour Readthedocs :
-"""""""""""""""""""""""""""""""""""
+-----------------------------------
 ::
 
     [.] mkdir readthedocs
 
 créer un fichier .gitignore :
-"""""""""""""""""""""""""""""
+-----------------------------
 ::
 
     [.] cd readthedocs
     [./readthedocs] echo -e "_*\nmake.bat\nMakefile" > .gitignore
 
 Créer le dossier pour la doc :
-""""""""""""""""""""""""""""""
+------------------------------
 ::
 
     [./readthedocs] mkdir docs
     
 Executer Sphinx pour créer le template de la doc :
-""""""""""""""""""""""""""""""""""""""""""""""""""
+--------------------------------------------------
 ::
 
     [./readthedocs] cd docs
@@ -51,7 +49,7 @@ Executer Sphinx pour créer le template de la doc :
     > Langue du projet [en]: fr
 
 Modifier le fichier conf.py pour changer le template :
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
+------------------------------------------------------
 rajouter : import sphinx_rtd_theme
 
 modifier : html_theme = 'alabaster'
@@ -59,10 +57,10 @@ par : html_theme = 'sphinx_rtd_theme'
 
 
 Créer un dépot <test> dans gitlab
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 
 Transférer dans le dépot :
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 ::
 
     [./readthedocs] git init
@@ -76,7 +74,7 @@ Transférer dans le dépot :
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
 Indices and tables
