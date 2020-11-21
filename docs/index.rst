@@ -22,19 +22,10 @@ Créer un dossier pour Readthedocs :
 
     [.] mkdir readthedocs
 
-Initialiser Git sur ce dossier :
-""""""""""""""""""""""""""""""""
-::
-
-    [.] cd readthedocs
-    [./readthedocs] git init
-    [./readthedocs] git config --global user.name "{John Doe}"
-    [./readthedocs] git config --global user.email {johndoe@example.com}
-
 créer un fichier .gitignore :
 """""""""""""""""""""""""""""
 ::
-
+    [.] cd readthedocs
     [./readthedocs] echo -e "_*\nmake.bat\nMakefile" > .gitignore
 
 Créer le dossier pour la doc :
@@ -65,13 +56,23 @@ rajouter : import sphinx_rtd_theme
 modifier : html_theme = 'alabaster'
 par : html_theme = 'sphinx_rtd_theme'
 
-faire un commit des fichiers :
-""""""""""""""""""""""""""""""
+
+Créer un dépot <test> dans gitlab
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Transférer dans le dépot :
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 ::
 
-    git add .gitignore
-    git add *
-    git commit -m "Creation"
+    [./readthedocs] git init
+    [./readthedocs] git config --global user.name "<John Doe>"
+    [./readthedocs] git config --global user.email <johndoe@example.com>
+    [./readthedocs] git add .gitignore
+    [./readthedocs] git add *
+    [./readthedocs] git commit -m "Creation"
+    [./readthedocs] git branch -M main
+    [./readthedocs] git remote add origin https://github.com/ROBERTPASCAL/<test.git>
+    [./readthedocs] git push -u origin main
 
 
 .. toctree::
