@@ -67,11 +67,10 @@ Transférer dans le dépot :
     [./readthedocs] git init
     [./readthedocs] git config --global user.name "<John Doe>"
     [./readthedocs] git config --global user.email <johndoe@example.com>
-    [./readthedocs] git add .gitignore
     [./readthedocs] git add *
     [./readthedocs] git commit -m "Creation"
     [./readthedocs] git branch -M main
-    [./readthedocs] git remote add origin https://github.com/ROBERTPASCAL/<test.git>
+    [./readthedocs] git remote add origin https://github.com/<ROBERTPASCAL/test.git>
     [./readthedocs] git push -u origin main
 
 
