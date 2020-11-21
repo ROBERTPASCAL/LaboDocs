@@ -20,7 +20,7 @@ Créer un dossier pour Readthedocs :
 """""""""""""""""""""""""""""""""""
 ::
 
-    [.] mkdir readthedoc
+    [.] mkdir readthedocs
 
 Initialiser Git sur ce dossier :
 """"""""""""""""""""""""""""""""
@@ -30,6 +30,12 @@ Initialiser Git sur ce dossier :
     [./readthedocs] git init
     [./readthedocs] git config --global user.name "{John Doe}"
     [./readthedocs] git config --global user.email {johndoe@example.com}
+
+créer un fichier .gitignore :
+"""""""""""""""""""""""""""""
+::
+
+    [./readthedocs] echo -e "_*\nmake.bat\nMakefile" > .gitignore
 
 Créer le dossier pour la doc :
 """"""""""""""""""""""""""""""
@@ -51,6 +57,14 @@ Executer Sphinx pour créer le template de la doc :
     > Nom(s) de l'auteur: <John Doe>
     > version du projet []: 
     > Langue du projet [en]: fr
+
+Modifier le fichier conf.py pour changer le template :
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+rajouter : import sphinx_rtd_theme
+
+modifier : html_theme = 'alabaster'
+par : html_theme = 'sphinx_rtd_theme'
+
 
 
 .. toctree::
