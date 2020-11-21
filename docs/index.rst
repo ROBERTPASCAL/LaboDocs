@@ -25,6 +25,7 @@ Créer un dossier pour Readthedocs :
 créer un fichier .gitignore :
 """""""""""""""""""""""""""""
 ::
+
     [.] cd readthedocs
     [./readthedocs] echo -e "_*\nmake.bat\nMakefile" > .gitignore
 
