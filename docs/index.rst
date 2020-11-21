@@ -43,6 +43,7 @@ Executer Sphinx pour créer le template de la doc :
 
     [./readthedocs] cd docs
     [./readthedocs/docs] sphinx-quickconfig
+ 
 ::
 
     > Séparer les répertoires build et source (y/n) [n]: 
