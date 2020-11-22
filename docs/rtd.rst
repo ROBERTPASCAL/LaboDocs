@@ -91,3 +91,7 @@ par : html_theme = 'sphinx_rtd_theme'
  * Cochez "Build pull requests for this project"
  * Cliquez sur "Enregistrer"
  * Cliquez sur "Compiler une version"
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
