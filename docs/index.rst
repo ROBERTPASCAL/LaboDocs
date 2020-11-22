@@ -7,3 +7,4 @@ Documentation du laboratoire
    :caption: readthedoc
 
    rtd
+   proxmox
