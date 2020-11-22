@@ -1,1 +1,1 @@
-[Lien vers la documentation](labodocs.rtfd.io "ReadTheDocs")
+[Lien vers la documentation](https://labodocs.rtfd.io "ReadTheDocs")
