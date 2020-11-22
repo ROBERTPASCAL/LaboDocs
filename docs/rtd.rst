@@ -66,6 +66,7 @@ par : html_theme = 'sphinx_rtd_theme'
 ------------------------------
 
 **Transférer dans le dépot :**
+
 .. code-block:: bash
 
     [./readthedocs] git init
