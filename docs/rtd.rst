@@ -95,3 +95,6 @@ par : html_theme = 'sphinx_rtd_theme'
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :caption: proxmox
+   
+   proxmox
