@@ -1,3 +1,5 @@
+.. _index:
+
 Documentation du laboratoire
 ============================
 
@@ -7,4 +9,10 @@ Documentation du laboratoire
    :caption: readthedoc
 
    rtd
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: proxmox
+
    proxmox
